@@ -5,9 +5,8 @@ public class GetAndStoreUserInput {
         Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Enter the String: ");
-        String myAnswer = keyboard.next();
 
-        String firstInitial = myAnswer;
+        String firstInitial = keyboard.next();
 
         String lastName = keyboard.next();
 
@@ -19,9 +18,12 @@ public class GetAndStoreUserInput {
 
         String city = keyboard.next();
 
+        keyboard.nextLine();    // end of line reading
+
         System.out.println(firstInitial + " " + lastName + " " + houseNumber + " ");
         System.out.println(streetName + " " + streetType + " " + city);
 
+        keyboard.close();
 
-    }
-}
+    }   // end of main() method
+}   // end of calss
